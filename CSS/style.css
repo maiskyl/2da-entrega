@@ -275,27 +275,7 @@
     }
 
 /* productos */
-
-    .productos__flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .productos__lista{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        padding: 10px;
-        text-align: center;
-    }
-
 }
-
-
-
 
 
 
@@ -361,27 +341,6 @@
 
 /* modificaciones de los productos */
 
-    .productos__grid{
-        display: grid;
-        grid-template-columns: repeat(4) 1fr;
-        grid-template-rows: 100px;
-
-        grid-template-areas: 
-        "titulo productos productos"
-        "lista productos productos";
-    }
-
-    .productos__tittle{
-        grid-area: titulo;
-    }
-
-    .productos__flex{
-        grid-area: productos;
-    }
-
-    .producto__lista{
-        grid-area: lista;
-    }
 
 
 
@@ -397,11 +356,6 @@
         width: 40%
 }
 
-    .informacion__flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
 
 
 /* modificaciones de la ubicación */
@@ -411,11 +365,6 @@
         width: 300px;
     }
 
-    .ubication__flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
 
     .ubication__text{
         margin-top: 15px;
@@ -424,11 +373,7 @@
 
 /* modificaciones del contacto */
 
-    .contacto__flex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+
 
     .contacto__pregunta-principal{
         margin-right: 35%;
@@ -442,5 +387,4 @@
     .contacto__form{
         border: 3px white
     }
-
 }

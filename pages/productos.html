@@ -36,12 +36,10 @@
 <!---------------------------LUEGO DEL TITULO VAN LAS TARJETAS CON LOS PRODUCTOS---------------------->
 
 <body>
-    <main >
-            
-        <section class="productos__grid">
-
+    <main class="row">
+        <div class="col-3">
+            <section class="productos__grid">
                 <h1 class="productos__tittle">Nuestros productos</h1>
-                
                 <div class="productos__lista">
                     <ul>
                         <li>Categoria1</li>
@@ -49,9 +47,12 @@
                         <li>Categoria3</li>
                     </ul>
                 </div>
-            
+            </section>
+        </div>
+        
+        <div class="col-9">
+            <section>
                 <article class="productos__flex">
-
                     <div class="productos__tarjeta">
                         <h2>Pizza especial</h2>
                         <img src="../img/1. pizza-especial.jpg" alt="pizza especial">
@@ -107,11 +108,10 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente quos, maxime eaque neque placeat. Repellat libero blanditiis officia sapiente.</p>
                         <button>Comprar</button>
                     </div>
-            </article>     
-
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/pngwhatsapp.png" alt="whatsapp-logo" id="logo-whatsapp" ></a>    
-
-        </section>
+                </article>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/pngwhatsapp.png" alt="whatsapp-logo" id="logo-whatsapp" ></a>
+            </section>
+        </div>
     </main>
 
 
@@ -133,7 +133,7 @@
         
     </footer>
     
-<script src="./js/bootstrap.js"></script>
+<script src="../js/bootstrap.js"></script>
 </body>
 
 
