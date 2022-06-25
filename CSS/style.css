@@ -114,6 +114,7 @@
     .inicio__contenedor{
         margin: 15px;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.186);
     }
 
     .inicio__article {
@@ -208,7 +209,13 @@
 
 .ubication__tittle{
     margin-left: 15px;
-    text-align: start
+    text-align: start;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.ubication__fondo{
+    background-color: rgba(255, 255, 255, 0.186);
 }
 
 
@@ -253,6 +260,10 @@
     text-align: center;
     margin: 15px;
 }
+    .contacto__fondo{
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.186);
+    }
 
 }
 
@@ -353,7 +364,6 @@
 
     .informacion__img{
         padding: 15px;
-        width: 40%
 }
 
 
@@ -362,7 +372,6 @@
 
     .ubication__map{
         padding: 15px;
-        width: 300px;
     }
 
 
@@ -380,11 +389,9 @@
         border: 0px;
     }
 
-    .contacto__text{
-        margin-right: 35%;
-    }
-
     .contacto__form{
         border: 3px white
     }
+
+
 }

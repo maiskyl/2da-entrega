@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,48 +41,53 @@
 
     <!----------------------------FINALIZACIÓN DEL NAV Y COMIENZO DEL FORMULARIO----------------->
 
-    <main class="row">
-        <section class="col-5">
-            <div>
-                <h2 class="contacto__pregunta-principal">¿Tienes alguna duda o consulta?</h2>
+    <main class="container">
+        <section class="row">
+            <div class="col-5">
+                <div class="contacto__fondo">
+                    <h2 class="contacto__pregunta-principal">¿Tienes alguna duda o consulta?</h2>
 
-                <p class="contacto__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                    dignissimos dolor fuga possimus. Dignissimos blanditiis facere voluptas nostrum autem id a nisi vero
-                    maiores culpa animi maxime, excepturi debitis cupiditate voluptatum facilis, quae doloribus iste,
-                    non iure neque necessitatibus similique quaerat magni? Amet laborum dignissimos quibusdam debitis.
-                    Architecto, at iure?</p>
+                    <p class="contacto__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        dignissimos dolor fuga possimus. Dignissimos blanditiis facere voluptas nostrum autem id a nisi
+                        vero
+                        maiores culpa animi maxime, excepturi debitis cupiditate voluptatum facilis, quae doloribus
+                        iste,
+                        non iure neque necessitatibus similique quaerat magni? Amet laborum dignissimos quibusdam
+                        debitis.
+                        Architecto, at iure?</p>
+                </div>
+
             </div>
-        </section>
 
+            <div class="col-7">
+                <div class="contacto__form">
+                    <form>
+                        <h3 class="contacto__tittle-form">Contacto</h3>
+                        <div class="contacto__formulario">
+                            <label for="nombre_apellido">Nombre</label>
+                            <input type="text" id="nombre_apellido" placeholder="Nombre y apellido..." />
+                        </div>
 
-        <section class="col-7">
-            <div class="contacto__form">
-                <form>
-                    <h3 class="contacto__tittle-form">Contacto</h3>
-                    <div class="contacto__formulario">
-                        <label for="nombre_apellido">Nombre</label>
-                        <input type="text" id="nombre_apellido" placeholder="Nombre y apellido..." />
-                    </div>
+                        <div class="contacto__formulario">
+                            <label for="correo_electronico">E-mail</label>
+                            <input type="email" id="correo_electronico" placeholder="ejemplo@mail.com" />
+                        </div>
 
-                    <div class="contacto__formulario">
-                        <label for="correo_electronico">E-mail</label>
-                        <input type="email" id="correo_electronico" placeholder="ejemplo@mail.com" />
-                    </div>
-
-                    <div class="contacto__formulario">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea>
+                        <div class="contacto__formulario">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea>
                         </textarea>
-                    </div>
+                        </div>
 
-                    <div class="contacto__formulario">
-                        <input type="submit" name="Enviar" id="">
-                        <input type="reset" name="Borrar todo">
-                    </div>
-                </form>
+                        <div class="contacto__formulario">
+                            <input type="submit" name="Enviar" id="">
+                            <input type="reset" name="Borrar todo">
+                        </div>
+                    </form>
+                </div>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/pngwhatsapp.png"
+                        alt="whatsapp-logo" id="logo-whatsapp"></a>
             </div>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/pngwhatsapp.png" alt="whatsapp-logo"
-                    id="logo-whatsapp"></a>
         </section>
 
 
