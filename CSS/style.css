@@ -35,27 +35,37 @@
         text-decoration: none;
         color: rgb(111, 43, 43);
     }
-    
-    .header__tittle, .header__nav{
+
+    .header__fondo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(255, 255, 255, 0.437);
+        width: 100%;
     }
     
-    .header__tittle{
-        font-family: Kaushan Script;
-        text-align:center;
-        font-size: 40px;
+
+    .header__logo img{
+        width: 100px;
+        margin: 5px;
     }
     
     .header__nav{
         font-family: Bebas Neue;
         text-align: center;
+        width: 100%;
+        margin:auto;
+        padding-top: 15px;
     }
+
     
     body{
         background-color: rgb(111, 43, 43);
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     p{
@@ -122,6 +132,10 @@
     }
     .inicio__article img{
         padding: 15px;
+    }
+
+    .carousel-item{
+        width: 100%;
     }
     
 
@@ -280,12 +294,67 @@
 
 @media (min-width: 760px){
 
-        header nav ul{
+    header nav ul{
         display: flex;
         justify-content: space-around;
     }
 
+    /* header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
+
+    header a:hover{
+        animation: animacionDelNav 1s;
+    }
+
+    @keyframes animacionDelNav {
+
+        0% {
+            color: rgb(103, 38, 38);
+            
+        }
+
+        100%{
+            color:white;
+            text-shadow: 2px 2px black;
+        }
+
+}
+
 /* productos */
+
+
+
+    .productos__flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productos__lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .productos__tarjeta:hover {
+        transform: scale(1.03);
+        transition-duration: 1s;
+    }
+
+    .productos__categoria:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
 }
 
 
@@ -355,10 +424,6 @@
 
 
 
-    .productos__tarjeta:hover {
-        transform: scale(1.03);
-        transition-duration: 1s;
-    }
 
 /* modificaciones de información */
 
