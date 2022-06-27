@@ -32,6 +32,10 @@
         font-family: Bebas Neue;
         font-size: 20px;
     }
+    ol, ul {
+        padding-left: 0rem;
+        }
+
     header a{
         text-decoration: none;
         color: rgb(111, 43, 43);
@@ -135,7 +139,10 @@
         padding: 15px;
     }
 
-    
+    .carousel-inner img{
+        width: 5rem;
+        height: 25rem;
+    }
 
     /* comienza la página de los productos */
 
@@ -335,10 +342,7 @@
 
 }
 
-.carousel-inner img{
-    width: 5rem;
-    height: 25rem;
-}
+
 
 
 
