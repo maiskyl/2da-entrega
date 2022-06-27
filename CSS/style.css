@@ -137,6 +137,10 @@
     .carousel-item{
         width: 100%;
     }
+
+    .carousel {
+        position: static;
+    }
     
 
     /* comienza la página de los productos */
@@ -180,6 +184,9 @@
         padding: 10px;
     }
 
+
+
+
     .productos__tarjeta h2{
         border: 3px solid white;
         padding: 3px;
@@ -190,9 +197,14 @@
         text-align: center;
     }
     
-    .productos__tarjeta button{
+    .btn{
         padding: 5px;
         margin: 5%;
+    }
+
+    .btn:hover{
+        background-color: rgb(111, 39, 39);
+        color: white;
     }
     
 
@@ -294,6 +306,10 @@
 
 @media (min-width: 760px){
 
+    header{
+        z-index: 100;
+    }
+
     header nav ul{
         display: flex;
         justify-content: space-around;
@@ -324,6 +340,13 @@
         }
 
 }
+
+.carousel-inner img{
+    width: 5rem;
+    height: 25rem;
+}
+
+
 
 /* productos */
 
