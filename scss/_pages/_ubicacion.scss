@@ -1,0 +1,37 @@
+
+.ubication{
+    background-color: rgba(255, 255, 255, 0.186);
+    margin: 15px;
+    &__map{
+        width: 100%;
+        padding: 10px;
+    }
+    &__tittle{
+        margin-left: 15px;
+        text-align: center;
+        font-size: 25px;
+        margin: 15px;
+        @include tablet{
+            text-align: start;
+        }
+    }
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+        "mapa texto"
+        "mapa texto";
+
+        iframe{
+            grid-area: mapa;
+        }
+        
+        &__informacion{
+            grid-area: texto;
+        }
+
+    }
+}
