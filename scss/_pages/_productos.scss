@@ -13,8 +13,16 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-items:flex-start;
             padding: 10px;
+        }
+        @include monitor{
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 15px;
+            }
         }
     }
     &__lista ul li{
@@ -23,7 +31,7 @@
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.186);
         text-align: center;
-        margin-left: 15px;
+        margin: 5px;
     }
     &__flex{
         display: flex;
@@ -90,32 +98,29 @@
         text-align: center;
     }
 
-    @include monitor{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-                
-        grid-template-areas: 
-        "titulo titulo titulo titulo"
-        "lista productos productos productos"
-        "lista productos productos productos"
-        "lista productos productos productos";
-        
-        &__tittle{
+    &__grid{
+        @include monitor{
+            display: grid;
+            grid-template-columns: repeat(3) 1fr;
+            grid-template-rows: 100px;
+            
+            grid-template-areas: 
+            "titulo productos productos"
+            "lista productos productos";
+            }
+            
+            .productos__tittle{
             grid-area: titulo;
-        }
-        
-        &__flex{
+            }
+            
+            .productos__flex{
             grid-area: productos;
-        }
-        
-        &__lista{
+            }
+            
+            .producto__lista{
             grid-area: lista;
+            }
         }
-    }
-}
-
-
 
     .btn{
         padding: 5px;
@@ -126,62 +131,4 @@
         background-color: rgb(111, 39, 39);
         color: white;
     }
-    
-
-    // -----------------------
-
-//     .productos__flex{
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//     }
-
-//     .productos__lista{
-//         display: flex;
-//         flex-direction: column;
-//         flex-wrap: nowrap;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding: 10px;
-//         &__categoria{
-//             margin: 2px;
-//         }
-//     }
-
-//     .productos__tarjeta:hover {
-//         transform: scale(1.03);
-//         transition-duration: 1s;
-//     }
-
-//     .productos__categoria:hover{
-//         background-color: rgb(255, 255, 255);
-//         color: black;
-//     }
-
-// // --------------
-
-//     .productos__grid{
-//         h1{
-//             text-align: center;
-//         }
-//         display: grid;
-//         grid-template-columns: repeat(4) 1fr;
-//         grid-template-rows: 100px;
-
-//         grid-template-areas: 
-//         "titulo productos productos"
-//         "lista productos productos";
-//     }
-
-//     .productos__tittle{
-//         grid-area: titulo;
-//     }
-
-//     .productos__flex{
-//         grid-area: productos;
-//     }
-
-//     .producto__lista{
-//         grid-area: lista;
-//     }
+}
