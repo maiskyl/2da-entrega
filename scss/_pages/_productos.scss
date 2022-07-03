@@ -1,0 +1,187 @@
+.productos{
+    &__tittle {
+        text-align: center;
+        margin: 15px;
+    }
+
+    &__lista{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+    &__lista ul li{
+        display: inline-block;
+        align-items: center;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.186);
+        text-align: center;
+        margin-left: 15px;
+    }
+    &__flex{
+        display: flex;
+        flex-flow: row wrap ;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+    }
+
+    &__tarjeta{
+        padding: 15px;
+        width: 300px;
+        padding: 15px;
+        border: 3px solid white;
+        margin: 15px;
+        text-align: center;
+        list-style: none;
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.363);
+        @include tablet{
+            &:hover {
+                transform: scale(1.03);
+                transition-duration: 1s;
+            }
+        }
+    }
+
+    &__categoria{
+        @include tablet{
+            &:hover{
+                background-color: rgb(255, 255, 255);
+                color: black;
+            }
+        }
+    }
+
+    &__tittle{
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.186);
+        font-size: 22px;
+    }
+
+    img{
+        width: 90%;
+        border: 3px solid white;
+    }
+
+    h2{
+        border: 3px solid white;
+        padding: 3px;
+        margin: 15px;
+    }    
+
+    p{
+        text-align: center;
+    }
+
+    @include monitor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+                
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "lista productos productos productos"
+        "lista productos productos productos"
+        "lista productos productos productos";
+        
+        &__tittle{
+            grid-area: titulo;
+        }
+        
+        &__flex{
+            grid-area: productos;
+        }
+        
+        &__lista{
+            grid-area: lista;
+        }
+    }
+}
+
+
+
+    .btn{
+        padding: 5px;
+        margin: 5%;
+    }
+
+    .btn:hover{
+        background-color: rgb(111, 39, 39);
+        color: white;
+    }
+    
+
+    // -----------------------
+
+//     .productos__flex{
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//     }
+
+//     .productos__lista{
+//         display: flex;
+//         flex-direction: column;
+//         flex-wrap: nowrap;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 10px;
+//         &__categoria{
+//             margin: 2px;
+//         }
+//     }
+
+//     .productos__tarjeta:hover {
+//         transform: scale(1.03);
+//         transition-duration: 1s;
+//     }
+
+//     .productos__categoria:hover{
+//         background-color: rgb(255, 255, 255);
+//         color: black;
+//     }
+
+// // --------------
+
+//     .productos__grid{
+//         h1{
+//             text-align: center;
+//         }
+//         display: grid;
+//         grid-template-columns: repeat(4) 1fr;
+//         grid-template-rows: 100px;
+
+//         grid-template-areas: 
+//         "titulo productos productos"
+//         "lista productos productos";
+//     }
+
+//     .productos__tittle{
+//         grid-area: titulo;
+//     }
+
+//     .productos__flex{
+//         grid-area: productos;
+//     }
+
+//     .producto__lista{
+//         grid-area: lista;
+//     }

@@ -1,0 +1,54 @@
+.contacto{
+    margin: 15px;
+    &__pregunta-principal{
+        border: 3px solid white;
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+        }
+    &__tittle-form{
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.363);
+        }
+    &__formulario{
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        background-color: rgba(255, 255, 255, 0.363);
+        }
+    &__preguntas-tittle{
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+        border: 3px solid white;
+        }
+    &__preguntas-text{
+        text-align: center;
+        margin: 15px;
+        }
+    &__fondo{
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.186);
+    }
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+        "dudas formulario";
+
+        &__fondo{
+            grid-area: dudas;
+            margin-right: 15px;
+        }
+
+        &__form{
+            grid-area: formulario;
+        }
+    }
+}
