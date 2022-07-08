@@ -76,7 +76,7 @@ header{
 
 body{
     background-color: rgb(111, 43, 43);
-    color: white;
+    color: map-get($colores, "letras");
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     p{
@@ -122,7 +122,7 @@ body{
         }
     a{
         text-decoration: none;
-        color: white;
+        color: map-get($colores, "letras" );
         margin-left: 75px;
         }
     &__logos{

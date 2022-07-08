@@ -68,7 +68,7 @@ header img {
 
 body {
   background-color: rgb(111, 43, 43);
-  color: white;
+  color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
 }
@@ -109,7 +109,7 @@ body p {
 }
 .footer a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin-left: 75px;
 }
 .footer__logos {
@@ -132,8 +132,8 @@ body p {
   }
 }
 
-.inicio {
-  background-color: rgba(255, 255, 255, 0.186);
+.inicio, .informacion__contenedor {
+  background-color: rgba(255, 255, 255, 0.1843137255);
   margin: 15px;
 }
 .inicio__contenedor {
@@ -318,9 +318,7 @@ body p {
 }
 
 .informacion__contenedor {
-  background-color: rgba(255, 255, 255, 0.186);
   padding: 15px;
-  margin: 15px;
 }
 .informacion__imagen img {
   width: 92%;

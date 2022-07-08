@@ -1,8 +1,8 @@
 .informacion{
     &__contenedor{
-        background-color: rgba(255, 255, 255, 0.186);
+        @extend .inicio;
         padding: 15px;
-        margin: 15px;
+        
     } 
     &__imagen{
         img{

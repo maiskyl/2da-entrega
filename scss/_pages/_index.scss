@@ -1,6 +1,6 @@
 
 .inicio{
-    background-color: rgba(255, 255, 255, 0.186);
+    background-color: map-get($colores, "fondo" );
     margin: 15px;
     &__contenedor{
         margin: 15px;
@@ -30,3 +30,5 @@
         }
     }
 }
+
+
