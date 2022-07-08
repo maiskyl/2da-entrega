@@ -278,9 +278,15 @@ body p {
   padding: 5px;
   margin: 5%;
 }
+.productos .btn a {
+  text-decoration: none;
+  color: black;
+}
+.productos .btn a:hover {
+  color: white;
+}
 .productos .btn:hover {
   background-color: rgb(111, 39, 39);
-  color: white;
 }
 
 .ubication {
