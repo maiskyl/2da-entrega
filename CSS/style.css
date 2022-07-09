@@ -175,6 +175,50 @@ body p {
   width: 100%;
 }
 
+.productos-g__generales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.productos-g h1 {
+  text-align: center;
+  margin: 15px;
+}
+.productos-g__tarjeta1, .productos-g__tarjeta2 {
+  background-image: url(/img/productos-d/torta-letra-v.jfif);
+  background-size: cover;
+  border: 3px solid white;
+  margin: 20px;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productos-g__tarjeta1 h2, .productos-g__tarjeta2 h2, .productos-g__tarjeta1 p, .productos-g__tarjeta2 p {
+  text-align: center;
+  margin: 15px;
+  text-shadow: 3px 3px 3px black;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+.productos-g__tarjeta1 a, .productos-g__tarjeta2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.productos-g__tarjeta1:hover, .productos-g__tarjeta2:hover {
+  transform: scale(1.09);
+  transition-duration: 1s;
+  box-shadow: 3px 3px 3px black;
+}
+.productos-g__tarjeta2 {
+  background-image: url(/img/productos-s/empanadass.jfif);
+  background-size: cover;
+}
+
 .productos__tittle {
   text-align: center;
   margin: 15px;
@@ -259,7 +303,133 @@ body p {
   width: 90%;
   border: 3px solid white;
 }
-.productos h2 {
+.productos h2, .productos .productos-g__tarjeta1 p, .productos-g__tarjeta1 .productos p, .productos .productos-g__tarjeta2 p, .productos-g__tarjeta2 .productos p {
+  border: 3px solid white;
+  padding: 3px;
+  margin: 15px;
+  font-size: 17px;
+}
+.productos p {
+  text-align: center;
+  font-size: 17px;
+}
+@media screen and (min-width: 1024px) {
+  .productos__grid {
+    display: grid;
+    grid-template-columns: repeat(3) 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "titulo productos productos" "lista productos productos";
+  }
+}
+.productos__grid .productos__tittle {
+  grid-area: titulo;
+}
+.productos__grid .productos__flex {
+  grid-area: productos;
+}
+.productos__grid .producto__lista {
+  grid-area: lista;
+}
+.productos .btn {
+  padding: 5px;
+  margin: 5%;
+}
+.productos .btn a {
+  text-decoration: none;
+  color: black;
+}
+.productos .btn a:hover {
+  color: white;
+}
+.productos .btn:hover {
+  background-color: rgb(111, 39, 39);
+}
+
+.productos__tittle {
+  text-align: center;
+  margin: 15px;
+}
+.productos__lista {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 760px) {
+  .productos__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .productos__lista ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+  }
+}
+.productos__lista ul li {
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.186);
+  text-align: center;
+  margin: 5px;
+}
+.productos__flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 760px) {
+  .productos__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+.productos__tarjeta {
+  padding: 15px;
+  width: 300px;
+  padding: 15px;
+  border: 3px solid white;
+  margin: 15px;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.363);
+}
+@media screen and (min-width: 760px) {
+  .productos__tarjeta:hover {
+    transform: scale(1.03);
+    transition-duration: 1s;
+  }
+}
+@media screen and (min-width: 760px) {
+  .productos__categoria:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+}
+.productos__tittle {
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.186);
+  font-size: 22px;
+}
+.productos img {
+  width: 90%;
+  border: 3px solid white;
+}
+.productos h2, .productos .productos-g__tarjeta1 p, .productos-g__tarjeta1 .productos p, .productos .productos-g__tarjeta2 p, .productos-g__tarjeta2 .productos p {
   border: 3px solid white;
   padding: 3px;
   margin: 15px;
