@@ -70,16 +70,16 @@ body {
   background-color: rgb(111, 43, 43);
   color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 body p {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 1024px) {
   body {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -112,10 +112,12 @@ body p {
   background-image: url(../img/bannerrrrrrrrrrrfoter.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  font-size: 16px;
 }
 .footer p {
   margin: 3px;
   text-align: center;
+  padding: 5px;
 }
 .footer a {
   text-decoration: none;
@@ -177,10 +179,18 @@ body p {
 
 .productos-g__generales {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 760px) {
+  .productos-g__generales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .productos-g h1 {
   text-align: center;
@@ -191,8 +201,6 @@ body p {
   background-size: cover;
   border: 3px solid white;
   margin: 20px;
-  width: 500px;
-  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,6 +221,12 @@ body p {
   transform: scale(1.09);
   transition-duration: 1s;
   box-shadow: 3px 3px 3px black;
+}
+@media screen and (min-width: 760px) {
+  .productos-g__tarjeta1, .productos-g__tarjeta2 {
+    width: 500px;
+    height: 600px;
+  }
 }
 .productos-g__tarjeta2 {
   background-image: url(/img/productos-s/empanadass.jfif);
@@ -529,6 +543,7 @@ body p {
   padding: 15px;
   font-size: 14px;
   text-align: center;
+  font-size: 18px;
 }
 .contacto__tittle-form {
   padding: 15px;
