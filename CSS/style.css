@@ -159,9 +159,122 @@ body p {
   justify-content: center;
   margin-left: 15px;
 }
+.inicio__iconos {
+  background-color: rgba(255, 255, 255, 0.1843137255);
+}
+@media screen and (min-width: 760px) {
+  .inicio__iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.inicio__iconos p {
+  margin: 15px;
+}
+.inicio__iconos img {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+}
+.inicio__destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 760px) {
+  .inicio__destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio__destacados p {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio__destacados p:hover {
+    animation: animacionDestacados 2s;
+  }
+  @keyframes animacionDestacados {
+    0% {
+      color: white;
+      text-shadow: 2px 2px 2px black;
+    }
+    50% {
+      color: rgb(127, 36, 36);
+    }
+    100% {
+      color: white;
+      text-shadow: 2px 2px 2px black;
+    }
+  }
+}
+@media screen and (min-width: 760px) {
+  .inicio__tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.inicio__tarjeta-i {
+  width: 19rem;
+  border: 3px solid white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(white, rgb(105, 29, 29));
+}
+.inicio__tarjeta-i img {
+  width: 100%;
+  height: 298px;
+}
+@media screen and (min-width: 1024px) {
+  .inicio__tarjeta-i img {
+    width: 298px;
+  }
+}
+.inicio__tarjeta-i p {
+  color: black;
+  font-size: 20px;
+}
+@media screen and (min-width: 760px) {
+  .inicio__tarjeta-i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    margin: 0px;
+  }
+  .inicio__tarjeta-i:hover {
+    transform: scale(1.03);
+    transition-duration: 1s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .inicio__tarjeta-i {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19rem;
+  }
+}
+.inicio__icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .inicio__carrusel {
   width: 100%;
   margin-right: 15px;
+  margin-top: 15px;
 }
 @media screen and (min-width: 760px) {
   .inicio__union {
@@ -193,9 +306,14 @@ body p {
     justify-content: center;
   }
 }
+.productos-g__contenedor {
+  background-color: rgba(255, 255, 255, 0.1843137255);
+}
 .productos-g h1 {
   text-align: center;
-  margin: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
+  font-family: Bebas Neue;
 }
 .productos-g__tarjeta1, .productos-g__tarjeta2 {
   background-image: url(/img/productos-d/torta-letra-v.jfif);
@@ -520,6 +638,22 @@ body p {
 
 .informacion__contenedor {
   padding: 15px;
+}
+.informacion span {
+  font-family: "Alfa Slab One";
+  animation-name: nuestrosOrigenes;
+  animation-duration: 1s;
+}
+@keyframes nuestrosOrigenes {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
 }
 .informacion__imagen img {
   width: 92%;

@@ -12,9 +12,14 @@
             justify-content: center;
         }
     }
+    &__contenedor{
+        background-color: map-get($colores, "fondo");
+    }
     h1{
         text-align: center;
-        margin: 15px;
+        margin-top: 15px;
+        padding-top: 15px;
+        font-family: Bebas Neue;
     }
     &__tarjeta1{
         background-image: url(/img/productos-d/torta-letra-v.jfif);

@@ -6,6 +6,13 @@
 
 @mixin columCenter {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@mixin tarjetasHorizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

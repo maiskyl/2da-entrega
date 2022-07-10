@@ -2,8 +2,27 @@
     &__contenedor{
         @extend .inicio;
         padding: 15px;
-        
     } 
+    span{
+        font-family: 'Alfa Slab One';
+        animation-name: nuestrosOrigenes;
+        animation-duration: 1s;
+    }
+
+    @keyframes nuestrosOrigenes{
+
+        0% {
+            transform: rotate(10deg);
+        }
+
+        50% {
+            transform: rotate(50deg);
+        }
+
+        100% {
+            transform: rotate(75deg);
+        }
+    }
     &__imagen{
         img{
             width: 92%;

@@ -11,10 +11,102 @@
             margin-left: 15px;
         }
     }
+    &__iconos{
+        background-color: map-get($colores, "fondo" );
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        p{
+            margin: 15px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+        }
+    }
+    &__destacados{
+        @include columCenter;
+        
+        @include tablet{
+            @include columCenter;
+            p{
+                font-family: Bebas Neue;
+                font-size: 30px;
+                @include columCenter;
+                &:hover{
+                    animation: animacionDestacados 2s;
+                }
+                @keyframes animacionDestacados {
+    
+                    0% {
+                        color:white; 
+                        text-shadow: 2px 2px 2px black;
+                    }
+
+                    50%{
+                        color:rgb(127, 36, 36);
+                        
+                    }
+    
+                    100%{
+                        color:white; 
+                        text-shadow: 2px 2px 2px black;
+                    }
+                }
+            }
+        }
+    }
+    &__tarjetas{
+        @include tablet{
+            @include tarjetasHorizontal;
+        }
+        
+    }
+    &__tarjeta-i{
+        width: 19rem;
+        border: 3px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-image: linear-gradient( white,rgb(105, 29, 29));
+        img{
+            width: 100%;
+            height: 298px;
+            @include monitor{
+                width: 298px;
+            }
+        }
+        p{
+            color: black;
+            font-size: 20px;
+        }
+        @include tablet{
+            @include columCenter;
+            width: 15rem;
+            margin: 0px;
+            &:hover{
+            transform: scale(1.03);
+            transition-duration: 1s;
+            }
+        }
+        @include monitor{
+            margin: 15px;
+            @include columCenter;
+            width: 19rem;
+        }
+    }
+    &__icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     
     &__carrusel{
         width: 100%;
         margin-right: 15px;
+        margin-top: 15px;
     }
 
     &__union{
