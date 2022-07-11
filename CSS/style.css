@@ -316,7 +316,7 @@ body p {
   font-family: Bebas Neue;
 }
 .productos-g__tarjeta1, .productos-g__tarjeta2 {
-  background-image: url(../img/productos-d/torta-letra-v.jfif);
+  background-image: url(../../img/productos-d/torta-letra-v.jfif);
   background-size: cover;
   border: 3px solid white;
   margin: 20px;
@@ -324,6 +324,12 @@ body p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 760px) {
+  .productos-g__tarjeta1, .productos-g__tarjeta2 {
+    width: 450px;
+    height: 550px;
+  }
 }
 .productos-g__tarjeta1 img, .productos-g__tarjeta2 img {
   width: 100%;
@@ -335,8 +341,8 @@ body p {
 }
 @media screen and (min-width: 1024px) {
   .productos-g__tarjeta1 img, .productos-g__tarjeta2 img {
-    width: 350px;
-    height: 400px;
+    width: 550px;
+    height: 600px;
   }
 }
 .productos-g__tarjeta1 h2, .productos-g__tarjeta2 h2, .productos-g__tarjeta1 p, .productos-g__tarjeta2 p {
@@ -356,7 +362,7 @@ body p {
   box-shadow: 3px 3px 3px black;
 }
 .productos-g__tarjeta2 {
-  background-image: url(../img/productos-s/empanadass.jfif);
+  background-image: url(../../img/productos-s/empanadass.jfif);
   background-size: cover;
 }
 
