@@ -4,7 +4,7 @@
         padding: 15px;
     } 
     span{
-        font-family: 'Alfa Slab One';
+        font-family: map-get($tipografias, "tipografia5");
         animation-name: nuestrosOrigenes;
         animation-duration: 1s;
     }

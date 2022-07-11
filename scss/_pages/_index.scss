@@ -5,7 +5,6 @@
     &__contenedor{
         margin: 15px;
         text-align: center;
-        
         & iframe {
             @include flexCenter;
             margin-left: 15px;
@@ -29,11 +28,10 @@
     }
     &__destacados{
         @include columCenter;
-        
+        font-family: map-get($tipografias, "tipografia4");
         @include tablet{
             @include columCenter;
             p{
-                font-family: Bebas Neue;
                 font-size: 30px;
                 @include columCenter;
                 &:hover{
