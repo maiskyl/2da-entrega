@@ -12,7 +12,7 @@ header {
   z-index: 100;
 }
 header nav {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", cursive;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -26,7 +26,7 @@ header nav {
 }
 header nav ul li {
   display: inline-block;
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", cursive;
   font-size: 20px;
 }
 header a {
@@ -70,7 +70,7 @@ header a {
 body {
   background-color: rgb(111, 43, 43);
   color: #ffffff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tahoma";
   font-size: 20px;
 }
 body p {
@@ -182,7 +182,7 @@ body p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", cursive;
 }
 @media screen and (min-width: 760px) {
   .inicio__destacados {
@@ -654,7 +654,7 @@ body p {
   padding: 15px;
 }
 .informacion span {
-  font-family: "Tiro Gurmukhi";
+  font-family: "Alfa Slab One", cursive;
   animation-name: nuestrosOrigenes;
   animation-duration: 1s;
 }
