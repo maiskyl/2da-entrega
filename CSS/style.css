@@ -5,19 +5,19 @@
 }
 
 header {
-  text-align: center;
   background-repeat: no-repeat;
   position: sticky;
   top: 0px;
   z-index: 100;
 }
 header nav {
-  font-family: "Bebas Neue", cursive;
-  font-size: 20px;
   text-align: center;
-  width: 100%;
   margin: auto;
   padding-top: 15px;
+}
+header nav ul li {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
 }
 header a {
   text-decoration: none;
@@ -164,7 +164,6 @@ body p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Bebas Neue", cursive;
 }
 @media screen and (min-width: 760px) {
   .inicio__destacados {
@@ -636,7 +635,7 @@ body p {
   padding: 15px;
 }
 .informacion span {
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Bebas Neue", cursive;
   animation-name: nuestrosOrigenes;
   animation-duration: 1s;
 }
