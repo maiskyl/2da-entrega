@@ -141,6 +141,11 @@ body p {
   justify-content: center;
   margin-left: 15px;
 }
+.inicio__h1 {
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+}
 .inicio__iconos {
   background-color: rgba(255, 255, 255, 0.1843137255);
 }
@@ -172,14 +177,14 @@ body p {
     align-items: center;
     justify-content: center;
   }
-  .inicio__destacados p {
+  .inicio__destacados h2, .inicio__destacados .productos-g__tarjeta1 p, .inicio__destacados .productos-g__tarjeta2 p, .productos-g__tarjeta1 .inicio__destacados p, .productos-g__tarjeta2 .inicio__destacados p {
     font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .inicio__destacados p:hover {
+  .inicio__destacados h2:hover, .inicio__destacados .productos-g__tarjeta1 p:hover, .inicio__destacados .productos-g__tarjeta2 p:hover, .productos-g__tarjeta1 .inicio__destacados p:hover, .productos-g__tarjeta2 .inicio__destacados p:hover {
     animation: animacionDestacados 2s;
   }
   @keyframes animacionDestacados {
@@ -194,6 +199,10 @@ body p {
       color: white;
       text-shadow: 2px 2px 2px black;
     }
+  }
+  .inicio__destacados h3 {
+    color: black;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -633,6 +642,9 @@ body p {
 
 .informacion__contenedor {
   padding: 15px;
+}
+.informacion__h1 {
+  text-align: start;
 }
 .informacion span {
   font-family: "Alfa Slab One", cursive;

@@ -10,6 +10,11 @@
             margin-left: 15px;
         }
     }
+    &__h1{
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+    }
     &__iconos{
         background-color: map-get($colores, "fondo" );
         @include tablet{
@@ -31,7 +36,7 @@
         font-family: map-get($tipografias, "tipografia4");
         @include tablet{
             @include columCenter;
-            p{
+            h2{
                 font-size: 30px;
                 @include columCenter;
                 &:hover{
@@ -54,6 +59,10 @@
                         text-shadow: 2px 2px 2px black;
                     }
                 }
+            }
+            h3{
+                color: black;
+                font-size: 20px
             }
         }
     }

@@ -3,6 +3,9 @@
         @extend .inicio;
         padding: 15px;
     } 
+    &__h1{
+        text-align: start;
+    }
     span{
         font-family: map-get($tipografias, "tipografia2");
         animation-name: nuestrosOrigenes;
