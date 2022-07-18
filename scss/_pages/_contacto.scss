@@ -1,5 +1,9 @@
 .contacto{
     margin: 15px;
+    &__h1{
+        margin: 15px;
+        text-align: center;
+    }
     &__pregunta-principal{
         border: 3px solid white;
         padding: 15px;
